@@ -1,9 +1,9 @@
 def prime?(num)
   if num < 0 || num == 0 || num == 1 
-    return false
-  else
+  false
+end
  (2...num).each do |divisor|
-    return false if num % divisor == 0 || num < 2 
+    return false if num % divisor == 0
  end
  true
 end
