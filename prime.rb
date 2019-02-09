@@ -4,7 +4,7 @@ def prime?(num)
   prime_chk = false
 end
  (2...num).each do |divisor|
-    return prime_chk if num % divisor == 0
+    return false if num % divisor == 0
  end
  prime_chk
 end
