@@ -1,9 +1,10 @@
 def prime?(num)
+  prime_chk = true
   if num < 0 || num == 0 || num == 1 
-  false
+  prime_chk = false
 end
  (2...num).each do |divisor|
-    return false if num % divisor == 0
+    return prime_chk if num % divisor == 0
  end
- true
+ prime_chk
 end
