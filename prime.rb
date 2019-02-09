@@ -6,5 +6,5 @@ end
  (2...num).each do |divisor|
     return false if num % divisor == 0
  end
- true
+ prime_chk
 end
