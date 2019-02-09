@@ -1,4 +1,4 @@
-require 
+
 def prime?(num)
   prime_chk = true
   if num < 0 || num == 0 || num == 1 
